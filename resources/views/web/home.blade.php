@@ -11,60 +11,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <style>
-        .categories-bar .navbar-nav .nav-item {
-            margin: 0 10px;
-        }
-
-        .categories-bar .navbar-nav .nav-link {
-            font-size: 16px;
-            font-weight: 400;
-            display: inline-block;
-        }
-
-        .categories-bar .dropdown-menu .dropdown-item {
-            margin-bottom: 10px;
-        }
-
-        .categories-bar .dropdown-menu .dropdown-item:hover {
-            background-color: #212529;
-            color: #fff;
-        }
-
-        .categories-bar .dropdown-mega .dropdown-menu {
-            width: 100%;
-        }
-
-        .categories-bar .dropdown-mega h5 {
-            padding-bottom: 12px;
-            border-bottom: 1px solid rgba(0, 0, 0, .125);
-            margin: 0;
-        }
-
-        .categories-bar .list-group-item {
-            font-size: 16px;
-            color: #3F3B51;
-            border: 0;
-            border-bottom: 1px solid rgba(0, 0, 0, .125);
-            padding: 12px 0;
-            transition: 300ms all;
-        }
-
-        .categories-bar .list-group-item:hover {
-            color: #ffc107;
-        }
-
-        /* Responsive */
-        @media(max-width: 991.5px) {
-            .categories-bar .navbar-brand {
-                font-size: 30px
-            }
-
-            .categories-bar .navbar-nav .nav-item {
-                margin: 5px 10px;
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -112,69 +58,73 @@
 
 <!-- Categories Start -->
 <header class="categories-bar">
-    <nav class="navbar navbar-expand-lg categories bg-light">
+    <nav class="navbar navbar-expand-lg categories bg-light" style="background: #ced4da !important;">
         <div class="container">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbar-content">
-                <i class="fas fa-stream text-white"></i>
+            <a href="#" class="navbar-brand"></a>
+
+            <button class="navbar-toggler collapsed float-end" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#categories-content">
+                <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbar-content">
+
+            <div class="collapse navbar-collapse" id="categories-content">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                           data-bs-auto-close="outside">Multilevel</a>
-                        <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="#">Gallery</a></li>
-                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                            <li class="dropstart">
-                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Submenu
-                                    Left</a>
-                                <ul class="dropdown-menu shadow">
-                                    <li><a class="dropdown-item" href=""> Third level 1</a></li>
-                                    <li><a class="dropdown-item" href=""> Third level 2</a></li>
-                                    <li><a class="dropdown-item" href=""> Third level 3</a></li>
-                                    <li><a class="dropdown-item" href=""> Third level 4</a></li>
-                                    <li><a class="dropdown-item" href=""> Third level 5</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropend">
-                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                   data-bs-auto-close="outside">Submenu Right</a>
-                                <ul class="dropdown-menu shadow">
-                                    <li><a class="dropdown-item" href=""> Second level 1</a></li>
-                                    <li><a class="dropdown-item" href=""> Second level 2</a></li>
-                                    <li><a class="dropdown-item" href=""> Second level 3</a></li>
-                                    <li class="dropend">
-                                        <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                           data-bs-auto-close="outside">Let's go deeper!</a>
-                                        <ul class="dropdown-menu dropdown-submenu shadow">
-                                            <li><a class="dropdown-item" href=""> Third level 1</a></li>
-                                            <li><a class="dropdown-item" href=""> Third level 2</a></li>
-                                            <li><a class="dropdown-item" href=""> Third level 3</a></li>
-                                            <li><a class="dropdown-item" href=""> Third level 4</a></li>
-                                            <li class="dropend">
-                                                <a href="#" class="dropdown-item dropdown-toggle"
-                                                   data-bs-toggle="dropdown">Still don't have enough? Go much
-                                                    deeper!</a>
-                                                <ul class="dropdown-menu dropdown-submenu shadow">
-                                                    <li><a class="dropdown-item" href=""> Third level 1</a></li>
-                                                    <li><a class="dropdown-item" href=""> Third level 2</a></li>
-                                                    <li><a class="dropdown-item" href=""> Third level 3</a></li>
-                                                    <li><a class="dropdown-item" href=""> Third level 4</a></li>
-                                                    <li><a class="dropdown-item" href=""> Third level 5</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="dropdown-item" href=""> Third level 5</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
+{{--                    <li class="nav-item dropdown">--}}
+{{--                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"--}}
+{{--                           data-bs-auto-close="outside">Multilevel</a>--}}
+{{--                        <ul class="dropdown-menu shadow">--}}
+{{--                            <li><a class="dropdown-item" href="#">Gallery</a></li>--}}
+{{--                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>--}}
+{{--                            <li class="dropstart">--}}
+{{--                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Submenu--}}
+{{--                                    Left</a>--}}
+{{--                                <ul class="dropdown-menu shadow">--}}
+{{--                                    <li><a class="dropdown-item" href=""> Third level 1</a></li>--}}
+{{--                                    <li><a class="dropdown-item" href=""> Third level 2</a></li>--}}
+{{--                                    <li><a class="dropdown-item" href=""> Third level 3</a></li>--}}
+{{--                                    <li><a class="dropdown-item" href=""> Third level 4</a></li>--}}
+{{--                                    <li><a class="dropdown-item" href=""> Third level 5</a></li>--}}
+{{--                                </ul>--}}
+{{--                            </li>--}}
+{{--                            <li class="dropend">--}}
+{{--                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"--}}
+{{--                                   data-bs-auto-close="outside">Submenu Right</a>--}}
+{{--                                <ul class="dropdown-menu shadow">--}}
+{{--                                    <li><a class="dropdown-item" href=""> Second level 1</a></li>--}}
+{{--                                    <li><a class="dropdown-item" href=""> Second level 2</a></li>--}}
+{{--                                    <li><a class="dropdown-item" href=""> Second level 3</a></li>--}}
+{{--                                    <li class="dropend">--}}
+{{--                                        <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"--}}
+{{--                                           data-bs-auto-close="outside">Let's go deeper!</a>--}}
+{{--                                        <ul class="dropdown-menu dropdown-submenu shadow">--}}
+{{--                                            <li><a class="dropdown-item" href=""> Third level 1</a></li>--}}
+{{--                                            <li><a class="dropdown-item" href=""> Third level 2</a></li>--}}
+{{--                                            <li><a class="dropdown-item" href=""> Third level 3</a></li>--}}
+{{--                                            <li><a class="dropdown-item" href=""> Third level 4</a></li>--}}
+{{--                                            <li class="dropend">--}}
+{{--                                                <a href="#" class="dropdown-item dropdown-toggle"--}}
+{{--                                                   data-bs-toggle="dropdown">Still don't have enough? Go much--}}
+{{--                                                    deeper!</a>--}}
+{{--                                                <ul class="dropdown-menu dropdown-submenu shadow">--}}
+{{--                                                    <li><a class="dropdown-item" href=""> Third level 1</a></li>--}}
+{{--                                                    <li><a class="dropdown-item" href=""> Third level 2</a></li>--}}
+{{--                                                    <li><a class="dropdown-item" href=""> Third level 3</a></li>--}}
+{{--                                                    <li><a class="dropdown-item" href=""> Third level 4</a></li>--}}
+{{--                                                    <li><a class="dropdown-item" href=""> Third level 5</a></li>--}}
+{{--                                                </ul>--}}
+{{--                                            </li>--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
+{{--                                    <li><a class="dropdown-item" href=""> Third level 5</a></li>--}}
+{{--                                </ul>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <hr class="dropdown-divider">--}}
+{{--                            </li>--}}
+{{--                            <li><a class="dropdown-item" href="#">Something else here</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </li>--}}
+
                     <li class="nav-item dropdown dropdown-mega position-static">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                            data-bs-auto-close="outside">Megamenu</a>
@@ -231,7 +181,277 @@
             </div>
         </div>
     </nav>
-</header>
+</header><!-- Categories End -->
+
+<!-- Campaigns Start -->
+<div class="campaigns-area m-5 p-4 border">
+    <h3 class="container">
+        CAMPAIGNS OF THE DAY
+    </h3>
+
+    <div class="container">
+        <div class="row">
+            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                <div class="MultiCarousel-inner">
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <p class="lead">Multi Item Carousel</p>
+                            <p>₹ 1</p>
+                            <p>₹ 6000</p>
+                            <p>50% off</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary leftLst"><</button>
+                <button class="btn btn-primary rightLst">></button>
+            </div>
+        </div>
+    </div>
+</div><!-- Campaigns End -->
+
+<!-- Footer Start -->
+<footer class="text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        E-Commerce Template
+                    </h6>
+
+                    <p>
+                        Welcome to your own market. This is your private platform. This platform hosts your products and those of
+                        other vendors you see as competitors. Will you be just a customer or will you be at the top?
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Web Links</h6>
+                    <p>
+                        <a href="#" class="text-white">Home</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white">About Us</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        Useful links
+                    </h6>
+                    <p>
+                        <a href="#" class="text-white">Login</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white">Popular Product List</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white">Help</a>
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p><i class="fas fa-home mr-3"></i> İstanbul/Kağıthane, Yahya Kemal, TURKEY</p>
+                    <p><i class="fas fa-envelope mr-3"></i> example@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> + 90 555 555 5555</p>
+                    <p><i class="fas fa-phone mr-3"></i> + 90 555 555 5555</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-3">
+
+        <!-- Section: Copyright -->
+        <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8 text-center text-md-start">
+                    <!-- Copyright -->
+                    <div class="p-3">
+                        © 2020 Copyright:
+                        <a class="text-white" href="#">E-Commerce Template</a>
+                    </div>
+                    <!-- Copyright -->
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                    <!-- Facebook -->
+                    <a
+                        class="btn btn-outline-light btn-floating m-1"
+                        role="button"
+                    ><i class="fab fa-facebook-f"></i
+                        ></a>
+
+                    <!-- Twitter -->
+                    <a
+                        class="btn btn-outline-light btn-floating m-1"
+                        role="button"
+                    ><i class="fab fa-twitter"></i
+                        ></a>
+
+                    <!-- Google -->
+                    <a
+                        class="btn btn-outline-light btn-floating m-1"
+                        role="button"
+                    ><i class="fab fa-google"></i
+                        ></a>
+
+                    <!-- Instagram -->
+                    <a
+                        class="btn btn-outline-light btn-floating m-1"
+                        role="button"
+                    ><i class="fab fa-instagram"></i
+                        ></a>
+                </div>
+                <!-- Grid column -->
+            </div>
+        </section>
+        <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+</footer><!-- Footer End -->
 
 <!-- JS -->
 <script src="{{ asset('js/app.js') }}"></script>

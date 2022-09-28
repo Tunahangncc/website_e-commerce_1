@@ -6,3 +6,83 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Fontawesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+// Jquery
+@import '~jquery-ui/themes/base/all.css';
+
+.categories-bar .navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.categories-bar .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.categories-bar .dropdown-menu .dropdown-item {
+    margin-bottom: 10px;
+}
+
+.categories-bar .dropdown-menu .dropdown-item:hover {
+    background-color: #212529;
+    color: #fff;
+}
+
+.categories-bar .dropdown-mega .dropdown-menu {
+    width: 100%;
+}
+
+.categories-bar .dropdown-mega h5 {
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    margin: 0;
+}
+
+.categories-bar .list-group-item {
+    font-size: 16px;
+    color: #3F3B51;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    padding: 12px 0;
+    transition: 300ms all;
+}
+
+.categories-bar .list-group-item:hover {
+    color: #ffc107;
+}
+
+/* Responsive */
+@media(max-width: 991.5px) {
+    .categories-bar .navbar-brand {
+        font-size: 30px
+    }
+
+    .categories-bar .navbar-nav .nav-item {
+        margin: 5px 10px;
+    }
+}
+
+footer {
+    background: #212529;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+.MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+.MultiCarousel .MultiCarousel-inner .item { float: left;}
+.MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+.MultiCarousel .leftLst { left:0; }
+.MultiCarousel .rightLst { right:0; }
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
