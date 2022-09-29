@@ -195,130 +195,47 @@
                 <div class="MultiCarousel-inner">
                     <div class="item">
                         <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
+                            <div class="card rounded">
+                                <div class="card-image">
+                                    <span class="card-notify-badge">New Product</span>
+                                    <span class="card-notify-year">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <img class="img-fluid" src="{{ asset('storage/products/try-product-1.jpeg') }}" alt="Alternate Text" />
+                                </div>
+                                <div class="card-image-overlay m-auto mt-3">
+                                    <span class="card-detail-badge main-price">300,50 ₺</span>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="ad-title m-auto">
+                                        <h5>Honda Accord LX</h5>
+                                    </div>
+                                    <a class="ad-btn" href="#">Add To Cart</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                     <div class="item">
                         <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad15">
-                            <p class="lead">Multi Item Carousel</p>
-                            <p>₹ 1</p>
-                            <p>₹ 6000</p>
-                            <p>50% off</p>
+                            <div class="card rounded">
+                                <div class="card-image">
+                                    <span class="card-notify-badge">New Product</span>
+                                    <span class="card-notify-year">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <img class="img-fluid" src="{{ asset('storage/products/try-product-1.jpeg') }}" alt="Alternate Text" />
+                                </div>
+                                <div class="card-image-overlay m-auto mt-3">
+                                    <span class="card-detail-badge main-price">300,50 ₺</span>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="ad-title m-auto">
+                                        <h5>Honda Accord LX</h5>
+                                    </div>
+                                    <a class="ad-btn" href="#">Add To Cart</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
