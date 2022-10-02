@@ -185,64 +185,48 @@
 
 <!-- Campaigns Start -->
 <div class="campaigns-area m-5 p-4 border">
-    <h3 class="container">
-        CAMPAIGNS OF THE DAY
-    </h3>
+    <div class="title">
+        <h3>
+            CAMPAIGNS
+        </h3>
+    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
-                <div class="MultiCarousel-inner">
-                    <div class="item">
-                        <div class="pad15">
-                            <div class="card rounded">
-                                <div class="card-image">
-                                    <span class="card-notify-badge">New Product</span>
-                                    <span class="card-notify-year">
-                                        <i class="fa-regular fa-heart"></i>
-                                    </span>
-                                    <img class="img-fluid" src="{{ asset('storage/products/try-product-1.jpeg') }}" alt="Alternate Text" />
-                                </div>
-                                <div class="card-image-overlay m-auto mt-3">
-                                    <span class="card-detail-badge main-price">300,50 ₺</span>
-                                </div>
-                                <div class="card-body text-center">
-                                    <div class="ad-title m-auto">
-                                        <h5>Honda Accord LX</h5>
-                                    </div>
-                                    <a class="ad-btn" href="#">Add To Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="swiper mySwiper campaigns-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="campaign-card">
+                    <div class="card" style="width: 100%;">
+                        <img src="{{ asset('storage/products/try-product-1.jpeg') }}" alt=".." class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Campaigns 1
+                            </h5>
 
-                    <div class="item">
-                        <div class="pad15">
-                            <div class="card rounded">
-                                <div class="card-image">
-                                    <span class="card-notify-badge">New Product</span>
-                                    <span class="card-notify-year">
-                                        <i class="fa-regular fa-heart"></i>
-                                    </span>
-                                    <img class="img-fluid" src="{{ asset('storage/products/try-product-1.jpeg') }}" alt="Alternate Text" />
-                                </div>
-                                <div class="card-image-overlay m-auto mt-3">
-                                    <span class="card-detail-badge main-price">300,50 ₺</span>
-                                </div>
-                                <div class="card-body text-center">
-                                    <div class="ad-title m-auto">
-                                        <h5>Honda Accord LX</h5>
-                                    </div>
-                                    <a class="ad-btn" href="#">Add To Cart</a>
-                                </div>
-                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                MAN CLOTHES
+                            </h6>
+
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci, alias architecto aspernatur deserunt distinctio eum ipsam iure molestias perferendis placeat quam recusandae rem temporibus vitae voluptatem voluptates? Officiis?
+                            </p>
+
+                            <a href="#" class="card-link">Show Products</a>
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-primary leftLst"><</button>
-                <button class="btn btn-primary rightLst">></button>
             </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
         </div>
+        <div class="swiper-button-next hidden"></div>
+        <div class="swiper-button-prev hidden"></div>
+        <div class="swiper-pagination"></div>
     </div>
 </div><!-- Campaigns End -->
 
@@ -372,5 +356,24 @@
 
 <!-- JS -->
 <script src="{{ asset('js/app.js') }}"></script>
+<script>
+    $(function () {
+        let campaignsSwiperNextBtn = $('.campaigns-area .swiper-button-next');
+        let campaignsSwiperPrevBtn = $('.campaigns-area .swiper-button-prev');
+
+        setInterval(function () {
+            let screenWidth = screen.width;
+
+            if (screenWidth >= 1024) {
+                campaignsSwiperNextBtn.removeClass('hidden')
+                campaignsSwiperPrevBtn.removeClass('hidden')
+            } else {
+                campaignsSwiperNextBtn.addClass('hidden')
+                campaignsSwiperPrevBtn.addClass('hidden')
+            }
+        }, 100);
+    });
+
+</script>
 </body>
 </html>
